@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    color: #fff;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+    background-color: #262626;
+}
+
+.nav > * {
+    margin: 10px;
+}
+
+.nav__logo {
+    font-family: Raleway;
+    font-size: 32px;
+}
+.nav__list {
+    display: flex;
+    gap: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.nav__button {
+    padding: 10px 25px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 3px;
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease;
+}
+
+.nav__button:hover {
+    background-color: #fff;
+    color: #262626;
+}
